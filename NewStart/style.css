@@ -28,12 +28,25 @@ body {
 #carefor .imgbox {
   width: 500px;
 }
+@media (max-width: 768px) {
+  #carefor .textbox h1 {
+    font-size: 50px;
+  }
+  #carefor .textbox h4 {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 576px) {
+  #carefor .textbox {
+    text-align: center;
+  }
+}
 
 #welcome {
   padding: 40px 0;
 }
 #welcome .textbox {
-  padding: 80px;
+  text-align: end;
 }
 #welcome .textbox h1 {
   font-weight: 700;
@@ -60,16 +73,34 @@ body {
   background-color: #8599a1;
   color: white;
 }
+#welcome .custom {
+  text-align: start;
+}
 #welcome .wid {
-  width: 580px;
-  padding: 0;
+  width: 40vw;
+}
+@media (max-width: 991px) {
+  #welcome .textbox {
+    padding: 10px 0 20px;
+  }
+  #welcome .wid {
+    width: 100vw;
+  }
+}
+@media (max-width: 768px) {
+  #welcome .textbox {
+    text-align: center;
+  }
+  #welcome .custom-order {
+    order: 2;
+  }
 }
 
 #about {
   padding: 40px 0;
 }
 #about .textbox {
-  padding: 50px 100px;
+  padding: 10px 80px 0 0;
 }
 #about .textbox h1 {
   font-weight: 700;
@@ -101,6 +132,12 @@ body {
 #about .imgbox {
   width: 650px;
 }
+@media (max-width: 991px) {
+  #about .textbox {
+    text-align: center;
+    padding: 0 0 50px;
+  }
+}
 
 #trainers {
   background-color: #b4c9d1;
@@ -118,7 +155,7 @@ body {
   line-height: 1.4;
 }
 #trainers .box {
-  margin: 0 5px;
+  margin: 0 5px 30px;
 }
 #trainers .box .textbox {
   padding: 15px;
@@ -144,7 +181,12 @@ body {
   margin: -7px;
 }
 #trainers .wid {
-  width: 580px;
+  width: 40vw;
+}
+@media (max-width: 991px) {
+  #trainers .wid {
+    width: 100vw;
+  }
 }
 
 #pricing {
@@ -161,9 +203,10 @@ body {
   font-weight: 200;
   font-size: 20px;
   color: #000000;
-  margin: 20px 0 50px;
+  margin: 20px 0 5px;
 }
 #pricing .box {
+  margin-top: 20px;
   width: 380px;
   color: white;
   background-color: #b4c9d1;
@@ -202,6 +245,11 @@ body {
 #pricing .PREMIUM-color .btn {
   background-color: #b4c9d1;
 }
+@media (max-width: 768px) {
+  #pricing .box {
+    width: 100vw;
+  }
+}
 
 #faq {
   padding: 40px 0;
@@ -221,6 +269,7 @@ body {
 }
 #faq .textbox {
   padding: 0 40px;
+  margin-bottom: 30px;
 }
 #faq .textbox h2, #faq .textbox h4 {
   color: #353434;
@@ -235,7 +284,7 @@ body {
 }
 #faq .textbox p {
   font-size: 20px;
-  margin: 30px 0 0 32px;
+  margin-left: 32px;
   color: #5a5a5a;
 }
 #faq .textbox li {
@@ -247,6 +296,11 @@ body {
 }
 #faq .icon i {
   font-size: 22px;
+}
+@media (max-width: 991px) {
+  #faq .textbox {
+    text-align: center;
+  }
 }
 
 #blog {
@@ -285,6 +339,19 @@ body {
 #blog .wid {
   width: 580px;
 }
+@media (max-width: 991px) {
+  #blog .box {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 576px) {
+  #blog .box {
+    flex-direction: column;
+  }
+  #blog .textbox {
+    margin: 20px 0 0;
+  }
+}
 
 #services {
   padding: 40px 0;
@@ -314,4 +381,9 @@ body {
 }
 #services .textbox .icon i {
   font-size: 60px;
+}
+@media (max-width: 768px) {
+  #services .textbox {
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */

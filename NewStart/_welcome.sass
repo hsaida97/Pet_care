@@ -1,7 +1,7 @@
 #welcome
     padding: 40px 0
     .textbox
-        padding: 80px
+        text-align: end
         h1
             font-weight: 700
             font-size: 30px
@@ -21,6 +21,23 @@
             border-radius: 20px
             background-color: #8599a1
             color: #ffff
+    .custom
+        text-align: start
     .wid
-        width: 580px
-        padding: 0
+        width: 40vw
+
+    @media (max-width:991px)
+        .textbox
+            padding: 10px 0 20px
+        .wid
+            width: 100vw
+
+    @media (max-width:768px)
+        .textbox
+           text-align: center
+        .custom-order
+            order: 2
+            
+        
+
+        
